@@ -1,0 +1,155 @@
+/* PROFILE SUB-COMPONENTS CSS START */
+.header-wrapper {
+    width: 100%;
+    height: 140px;
+}
+
+.header-profile {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.header-profile img {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+.header-profile a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #121212;
+    display: flex;
+    align-items: center;
+}
+
+/* PROFILE SUB-COMPONENTS CSS END */
+
+
+/* HEADER BOTTOM CSS START */
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.header-bottom::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: pink;
+}
+
+.header-bottom-left {
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.header-bottom-left a {
+    padding: 0 1rem;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.animation {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    background-color: red;
+    transition: 0.5s left ease-in-out;
+}
+
+.header-bottom-left a:first-of-type:hover ~ .animation {
+    left: 0;
+} 
+.header-bottom-left a:last-of-type:hover + .animation {
+    left: 50%;
+} 
+
+
+
+
+/* HEADER SEARCH START  */
+.header-search{
+    width: 250px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.5rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.header-search svg {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+.header-search input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+/* HEADER SEARCH END */
+
+
+/* MEDIA QUERIES FOR RESPONSIVESS */
+@media only screen and (max-width : 370px) { 
+    .header-bottom-left-wrapper{
+        width: 100%;
+        overflow-x: auto;
+        order: 2;
+    }
+    
+    .header-bottom-left {
+        min-width: 200px !important;
+    }
+}
+@media only screen and (max-width : 500px) {
+
+    .header-bottom-left {
+        width: auto;
+        flex-wrap: nowrap;
+
+    }
+    .header-bottom-left a {
+        word-break: keep-all;
+        width: 50%;
+    }
+
+    .header-wrapper {
+        height: 200px !important;
+    }
+    .header-profile {
+        margin-bottom: 0.5rem;
+    }
+}
+@media only screen and (max-width : 700px) {
+    .header-wrapper {
+        height: 170px;
+    }
+    .header-bottom {
+        flex-direction: column;
+    }
+    .header-bottom-left-wrapper {
+        order: 2;
+    }
+    .header-search {
+        order: 1;
+        width: 100%;
+    }
+}

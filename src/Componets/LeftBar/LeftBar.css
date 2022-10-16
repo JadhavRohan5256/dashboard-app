@@ -1,0 +1,115 @@
+.brand-wrapper {
+    display: flex;
+    align-items: center;
+    
+}
+.brand-wrapper img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+
+
+.bar-box {
+    margin-top: 2rem;
+}
+.bar-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.bar-icon span {
+    margin-top: 0.5rem;
+    width: 35px;
+    height: 2px;
+    background-color: #03dac6;
+    transition: all 0.8s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #121212;
+}
+.bar-icon-middle {
+    height: 1.5px !important;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .bar-icon .bar-icon-top {
+    transform:  translateY(0.9rem) rotate(400deg) translateX(0.2rem) ;
+    transition: all 0.8s ease-in-out;
+}
+input[type="checkbox"]:checked + .bar-icon .bar-icon-middle {
+    transform: translateX(10rem) scale(0);
+    transition: all 0.8s ease-in-out;
+}
+input[type="checkbox"]:checked + .bar-icon .bar-icon-bottom {
+    transform: rotate(-45deg) translateX(0.2rem);
+    transition: all 0.8s ease-in-out;
+}
+
+
+/* NAVAGATION MENU START   */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    color: #121212;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+.nav-menu a svg {
+    margin-right: 0.5rem;
+}
+/* NAVAGATION MENU END */
+
+.support-wrapper {
+    margin-top: 1rem;
+}
+.support-wrapper h3 {
+    font-weight: 500;
+}
+.support-wrapper a {
+    text-decoration: none;
+    color: #121212;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+.support-box {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    transition: all 1s ease-in-out;
+}
+.support-tickets {
+    font-weight: 500;
+}
+
+.support-count {
+    padding: 0.2rem 0.5rem;
+    background-color: #03dac6;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+.hide {
+    display: none;
+    
+}
+
+.column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left-bar-size {
+    flex: 0 0 60px;
+    transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+    .main-content-cards {
+        padding: 0;
+    }
+}
