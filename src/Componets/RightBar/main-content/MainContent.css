@@ -13,6 +13,7 @@
 }
 .main-content-cards::-webkit-scrollbar-thumb {
     background-color: #03DAC6;
+    border-radius: 10px;
 }
 .card {
     background-color: #ffffff;

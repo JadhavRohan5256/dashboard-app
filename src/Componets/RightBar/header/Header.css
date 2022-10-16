@@ -114,6 +114,15 @@
         overflow-x: auto;
         order: 2;
     }
+    .header-bottom-left-wrapper:-webkit-scrollbar {
+        width: 5px;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+    .header-bottom-left-wrapper:-webkit-scrollbar-thumb {
+        background-color: #03DAC6;
+        border-radius: 10px;
+    }
     
     .header-bottom-left {
         min-width: 200px !important;
